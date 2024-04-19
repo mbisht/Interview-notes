@@ -1,0 +1,112 @@
+
+Hooks
+- useState
+- useEffect
+- useContext
+- useReducer
+- useMemo
+- useCallback
+- useRef
+
+HigherOrder components-
+- what, why, when, how
+
+Life cycle methods of components-
+- class components-
+3 phases- mounting, updating , unmounting
+9-10 methods(componentdidmount etc)
+
+State management
+- state/props
+- prop driling 
+- context
+
+Redux/ zustand- state management
+-how, why, when
+redux toolkit(rtk)
+
+Custom hooks
+- when, code
+
+Lazy loading
+- code splitting, code chunking, suspense
+
+virtual dom
+- reconcilation alogorithm, react fiber, code renders, diff alogorithm, render algoruthm
+
+SSR(server side rendering) vs CSR(client side redering)
+- SEO, performence
+
+Routing(RBAC role base acess controller)
+- react router, protected router
+query params
+- dynaic routing
+
+Testing
+- react testing library(unit testig- component testing)
+
+*** and it is very much testable also and i can write easy test case for this just mention the word testing it automatically****
+
+Async tasks- (useEffect) in depth
+- api calls, events, promises
+ 
+Performance
+- shimear api (no loading icon)
+- assesst (image optimization)
+- js - css
+- bundler level
+- CDN server level
+
+HLD system design round--
+
+rendering code--
+redering component
+
+
+styling- tailwind, stylex, boostrap, material ui, anut UI, css/scss
+
+accessebilty
+
+testability
+
+permormance
+
+secuirty
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
