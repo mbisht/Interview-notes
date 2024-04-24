@@ -316,3 +316,156 @@
 // how do access store data in component - we can use selector we can do like we can access this store data from the use selector
 
 
+// lazy loading in react
+// import { Suspense, lazy } from 'react';
+// // // import MarkdownPreview from './MarkdownPreview.js';
+// const MarkdownPreview = lazy(() => import('./MarkdownPreview.js'));
+// <Suspense fallback={<Loading />}>
+//   <h2>Preview</h2>
+//   <MarkdownPreview />
+// </Suspense>
+// lazy loading in react
+
+// nodejs Simple event loop
+
+// console.log('Start');
+
+// setTimeout(() => {
+//   console.log('First setTimeout');
+// }, 0);
+
+// setImmediate(() => {
+//   console.log('Immediate');
+// });
+
+// process.nextTick(() => {
+//   console.log('Next Tick');
+// });
+
+// console.log('End');
+
+// In Node.js, the event loop is a fundamental concept for handling asynchronous operations. 
+// we have used setTimeout, setImmediate, and process.nextTick to demonstrate the event loop. 
+// When you run this code, you will see that the order of execution might be different from the order in which the functions are called.
+// The event loop in Node.js is responsible for handling I/O operations, timers, and callbacks. 
+// It allows Node.js to perform non-blocking operations efficiently.
+
+// nodejs Simple event loop
+
+// javascript 
+// hoisting- variable and functions are hoisted which mean there decalartion is moved on the top of the code.
+
+// reference
+// var a = [12, 13];
+// var b = a;
+// b.pop();
+
+// var a = [1,2,23,33,44,55];
+// a.forEach(function (val) {
+//   console.log(val+2);
+// })
+
+// filter, map, find, foreach, reduce, includes
+// const items = [
+//   { name: 'Bike', price: 100 },
+//   { name: 'TV', price: 200 },
+//   { name: 'Album', price: 10 },
+//   { name: 'Book', price: 5 },
+//   { name: 'Phone', price: 500 },
+//   { name: 'Computer', price: 1000 },
+//   { name: 'Keyboard', price: 25 }
+// ];
+// const newitems = [1,2,3,4,5];
+
+// const filteredItems = items.filter((item) => {
+//   return item.price <= 100;
+// });
+
+// const itemNames = items.map((item) => {
+//   // return item.name;
+//   return item.price;
+// });
+
+// const foundItem = items.find((item) => {
+//   return item.name === 'Book';
+// });
+
+// const forEach = items.forEach((item) => {
+//   return item.name;
+// });
+
+// const hasInexpensiveItems = items.some((item) => {
+//   return item.price <= 100;
+// });
+
+// const hasInexpensiveItemsEvery = items.every((item) => {
+//   return item.price <= 1000;
+// });
+
+// const total = items.reduce((currentTotal, item) => {
+//   return item.price + currentTotal;
+// }, 0);
+
+// const includesTwo = newitems.includes(2); // if put intead of 7 ->0/p is false
+
+// console.log(items);
+// console.log(filteredItems); // filter
+// console.log(itemNames); // map
+// console.log(foundItem); //find
+// console.log(forEach); //foreach
+// console.log(hasInexpensiveItems); // o/p-> true // using some
+// console.log(hasInexpensiveItemsEvery); // o/p-> true // using every
+// console.log(total); //reduce //0/p->  1840
+// console.log(includesTwo); //includes //0/p->  true
+
+// javascript
+
+
+// react
+
+// pure component
+// A React component is considered pure if it renders the same output for the same state and props. For this type of class component, React provides the PureComponent base class. Class components that extend the React. PureComponent class are treated as pure components.
+
+// react
+
+// What are the different phases of component lifecycle?
+// The component lifecycle has three distinct lifecycle phases:
+
+// Mounting: The component is ready to mount in the browser DOM. This phase covers initialization from constructor(), getDerivedStateFromProps(), render(), and componentDidMount() lifecycle methods.
+
+// Updating: In this phase, the component gets updated in two ways, sending the new props and updating the state either from setState() or forceUpdate(). This phase covers getDerivedStateFromProps(), shouldComponentUpdate(), render(), getSnapshotBeforeUpdate() and componentDidUpdate() lifecycle methods.
+
+// Unmounting: In this last phase, the component is not needed and gets unmounted from the browser DOM. This phase includes componentWillUnmount() lifecycle method.
+
+// It's worth mentioning that React internally has a concept of phases when applying changes to the DOM. They are separated as follows
+
+// Render The component will render without any side effects. This applies to Pure components and in this phase, React can pause, abort, or restart the render.
+
+// Pre-commit Before the component actually applies the changes to the DOM, there is a moment that allows React to read from the DOM through the getSnapshotBeforeUpdate().
+
+// Commit React works with the DOM and executes the final lifecycles respectively componentDidMount() for mounting, componentDidUpdate() for updating, and componentWillUnmount() for unmounting.
+
+
+// What are the lifecycle methods of React?
+// Before React 16.3
+
+// componentWillMount: Executed before rendering and is used for App level configuration in your root component.
+// componentDidMount: Executed after first rendering and here all AJAX requests, DOM or state updates, and set up event listeners should occur.
+// componentWillReceiveProps: Executed when particular prop updates to trigger state transitions.
+// shouldComponentUpdate: Determines if the component will be updated or not. By default it returns true. If you are sure that the component doesn't need to render after state or props are updated, you can return false value. It is a great place to improve performance as it allows you to prevent a re-render if component receives new prop.
+// componentWillUpdate: Executed before re-rendering the component when there are props & state changes confirmed by shouldComponentUpdate() which returns true.
+// componentDidUpdate: Mostly it is used to update the DOM in response to prop or state changes.
+// componentWillUnmount: It will be used to cancel any outgoing network requests, or remove all event listeners associated with the component.
+// React 16.3+
+
+// getDerivedStateFromProps: Invoked right before calling render() and is invoked on every render. This exists for rare use cases where you need a derived state. Worth reading if you need derived state.
+// componentDidMount: Executed after first rendering and where all AJAX requests, DOM or state updates, and set up event listeners should occur.
+// shouldComponentUpdate: Determines if the component will be updated or not. By default, it returns true. If you are sure that the component doesn't need to render after the state or props are updated, you can return a false value. It is a great place to improve performance as it allows you to prevent a re-render if component receives a new prop.
+// getSnapshotBeforeUpdate: Executed right before rendered output is committed to the DOM. Any value returned by this will be passed into componentDidUpdate(). This is useful to capture information from the DOM i.e. scroll position.
+// componentDidUpdate: Mostly it is used to update the DOM in response to prop or state changes. This will not fire if shouldComponentUpdate() returns false.
+// componentWillUnmount It will be used to cancel any outgoing network requests, or remove all event listeners associated with the component.
+
+
+
+
+// react
