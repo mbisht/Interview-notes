@@ -63,6 +63,45 @@ Certification.
 
 • DevOps Certification (Edureka)
 **************
+****************************************************
+Heading
+Senior Engineer Tata Elxsi | Ex-L&T Technology Services (LTTS) | NHCE-Blore
+****************************************************
+About 
+Professional Experience
+• Having 7+ years of hands-on experience in web development and support & maintenance of Web applications.
+• Experience developing a highly interactive web application utilizing JavaScript, HTML4/5, Css2/3, JSON, Vuejs, Angularjs1, Angular2/4 and bootstrap3/4 and integrating Spring-boot Restful APIs.
+• In-depth knowledge of web Technologies and standards to deliver the best experiences across the web and mobile devices including responsive web UI.
+• Ability to create beautiful web application writing to top notch HTML5, Css3, jQuery, JavaScript, RWD framework.
+• Good experience in developing the SPA application using angularjs1 and angular2/4.
+• Proficiency in building responsive and mobile-optimized websites and web applications using a UI framework like (Bootstrap3/4, PrimeNG V6/7/8/9, Dev Extreme, and Clarity design)
+• Worked in a version control system like Git.
+• Worked extensively on the agile development project.
+• Worked with the business team to understand their business model and goals.
+
+Technical Skills
+Web Technologies: HTML4/5, CSS2/3, JavaScript, ECMA Script.
+Front-End Framework: Angularjs1, Angular2/4, NPM.
+UI Component library: PrimeNG V6/7/8/9
+CSS Framework: Bootstrap3/4.
+OS: Basic Linux Fundamental
+IDE & Tools: Visual Studio Code, Sublime, Visual Studio 2012
+Version Control: GitLab, BitBucket
+Methodologies: Agile
+Developer Tools: Firebug, Inspect Element.
+API Testing Tools: Swagger, Postman.
+Cloud Services: Amazon EC2.
+Document Management: Confluence
+Defect Tracking System: BrowserStack
+Database: MS SQL Server 2008.
+CI/CD: Jenkins
+Containerization: Docker.
+Remote Computing: Citrix(Client- SKY), Putty
+
+Certification.
+• Python Certification - W3Schools
+****************************************************
+
 delete file-
 rmdir /s/q output
 **************
