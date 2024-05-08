@@ -21,4 +21,8 @@ const myPromise = new Promise((resolve, reject) => {
    Promise.race([promise1, promise2])
        .then((value) => console.log(value)); // o/p: one 
 
+**************
+TSL
+The TSL Technology Intelligence Platform is a knowledge sharing portal which brings together knowledge from various sources such as primary and secondary research info by TSL expert team, social listening and TSL user contributions
+**************
 
