@@ -113,4 +113,12 @@ ABC-(Assisted Bearing Condition Status Detection for Sustainable Refurbishment)
 project description--
 The goal of this project is to develop AI models for image classification problem that is integrated into a graphical user interface (GUI) to assist domain experts in determining whether the bearing images that are fed into the GUI are classified as defective or non-defective at the surface level and also aids in making a decision on whether the bearings can be used continuously, or if they need to be replaced or refurbished. As a result, they will be able to use the AI model's predictions to make an informed decision.
 **************
+--- Docker command ---
+
+sudo apt install docker-buildx
+docker buildx create --use
+docker buildx build --platform linux/arm64 --output type=docker -t frontend-server-uat-ecr .
+
+*******
+
 
