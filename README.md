@@ -104,6 +104,11 @@ Certification.
 
 delete file-
 rmdir /s/q output
+
+for create new project, if folder already created  :-   npx create-react-app ./
+
+run single javascript file-> node .\index.js
+
 **************
 Schaeffler allocate project- 03|01|2022
 Customer name – Schaeffler (Germany)
